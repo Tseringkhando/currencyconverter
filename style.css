@@ -5,21 +5,19 @@ body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-color: #ffffff;
 }
-
+/* center the content */
 main {
     margin: 50px auto;
     width: 80%;
 }
-
+/* headings */
 header {
     background-color: #37507e;
     color: #ffffff;
     padding: 10px;
     margin-bottom: 10px;
 }
-
-
-
+/* div with two fields for usd and cad */
 .forms-container {
     display: flex;
     justify-content: space-between;
@@ -48,7 +46,7 @@ label {
     border: 1px solid #cccccc;
     border-radius: 5px;
 }
-
+/* for the flag dropdown demo next to input fields */
 .flag-icon {
     background-color: #41507a;
     color: white;
@@ -62,7 +60,6 @@ label {
 .flag-icon>img {
     width: 30px;
     height: auto;
-
 }
 
 span {
@@ -81,19 +78,12 @@ span {
     float: right;
 }
 
-.result {
-    margin-top: 20px;
-    font-weight: bold;
-}
-
-
+/* css for exchange icon between the fields */
 .fa-exchange {
     text-align: center;
     color: #40a2f8;
     height: auto;
 }
-
-
 .exchange-icon {
     padding: 5%;
     display: flex;
@@ -113,11 +103,9 @@ footer {
 
 
 
-/* Media queries for responsive */
-
+/* Media queries for responsive site*/
 @media only screen and (max-width: 680px) {
 
-    /* For mobile phones */
     main {
         display: flex;
         flex-direction: column;
@@ -141,6 +129,7 @@ footer {
         margin-top: 10px;
     }
 
+    /* to make the exchange icon vertical */
     .fa-exchange {
         transform: rotate(90deg);
     }
