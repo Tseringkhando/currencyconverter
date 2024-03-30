@@ -1,3 +1,4 @@
+/* Submitted by Tsering Khando Lama C0916140 */
 body {
     margin: 0;
     padding: 0;
@@ -5,7 +6,7 @@ body {
     background-color: #ffffff;
 }
 
-section {
+main {
     margin: 50px auto;
     width: 80%;
 }
@@ -93,9 +94,65 @@ span {
 }
 
 
-.exchange-icon{
+.exchange-icon {
     padding: 5%;
     display: flex;
     align-items: center;
     margin-right: 5%;
+}
+
+footer {
+    background-color: #37507e;
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+
+
+/* Media queries for responsive */
+
+@media only screen and (max-width: 680px) {
+
+    /* For mobile phones */
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+    }
+
+    .forms-container {
+        display: block;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    .flag-icon {
+        border-radius: 5px 5px 0 0;
+    }
+
+    .convert-btn {
+        margin-top: 10px;
+    }
+
+    .fa-exchange {
+        transform: rotate(90deg);
+    }
+
+    .exchange-icon {
+        padding: 10%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    footer {
+        font-size: 14px;
+    }
 }

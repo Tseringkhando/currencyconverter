@@ -1,3 +1,4 @@
+/* Submitted by Tsering Khando Lama C0916140 */
 function convert() {
     // Get USD amount
     let usdAmount = parseFloat(document.getElementById('usd-amount').value);
@@ -8,7 +9,7 @@ function convert() {
         return;
     }
 
-    // Convert USD to CAD (hardcoded rate)
+    // Convert USD to CAD 
     let cadResult = usdAmount * 1.25;
     cadResult = cadResult.toFixed(3); // Round to 3 decimal places
 
